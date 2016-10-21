@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	 <meta charset="utf-8" />
+	<title>Nancy's Portfolio</title>
+	<meta name="author" content="Nancy Ramirez" />
+	
+	<link rel="stylesheet" href="animation.css">
+	<link rel="stylesheet" type="text/css" href="jqueryfullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="shortcut icon" type="image/png" href="imgs/logo.png" />
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+
+	<script type="text/javascript" src="jqueryfullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+		
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('#fullpage').fullpage({
+	
+				sectionsColor: ['#151117', '#151117', '#151117', '#151117', '#151117'],
+				anchors: ['firstPage','secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+				continuousVertical: true,
+				navigation: true,
+				navigationTooltips: ['Welcome','Objective', 'Education', 'Languages', 'Job History', 'Volunteer Experience'],
+				
+				afterLoad: function(anchorLink, index){
+				
+						//animation for each page
+					//section 0 welcome
+					if(index == 1){
+					
+						$('#section0').find('p').first().fadeIn(2100, function(){
+							$('#section0').find('p').last().fadeIn(2100);
+						});
+					}
+					
+					//section 1 ABOUT
+					if(anchorLink == 'secondPage'){
+					
+						$('#about').addClass("fadeIn");
+						
+						$('.paragraph').first().fadeIn(1800, function(){
+							$('#section1').find('.paragraph').last().fadeIn(1800);
+						});
+					}
+					
+					//section 2 EDUCATION
+					if(anchorLink == '3rdPage'){
+						
+						$('#edtitles1').addClass("expandUp");
+						
+						$('#edtitles2').addClass("expandUp");
+						
+						$('#section2').find('.edparagraph').delay(500).animate({
+							left: '0%'
+						},1500);
+						
+						$('#courseList').addClass("slideUp");
+						//audio goes here
+						var audio = $("#mySoundClip")[0];
+									audio.play();
+					}
+					
+					//section 3 SKILLS
+					if(anchorLink == '4thpage'){
+							$('#htmlbar').addClass("slideUp");
+							$('#cssbar').addClass("slideUp");
+							$('#jsbar').addClass("slideUp");
+							$('#jqbar').addClass("slideUp");
+							$('#jbar').addClass("slideUp");
+							$('#vbbar').addClass("slideUp");
+							$('#androidbar').addClass("slideUp");
+							$('#sqlbar').addClass("slideUp");
+							$('#cbar').addClass("slideUp");
+					}//end of sectio 4 allows each bar to slide up all together
+					
+
+					//section 4 JOB HISTORY
+					if(anchorLink == '5thpage'){
+					
+					}
+					
+					if(anchorLink == 'lastPage'){
+					
+						$('#olg').addClass("expandOpen");
+						
+						$('#translator').addClass("slideUp");
+						
+						$('#translatorlist').addClass("slideUp");
+
+					}
+				
+				} //afterLoad: function(anchorLink, index)	
+			});
+		});
+
+	</script>
+	
+</head>
+
+<body>
+
+
+
+<div class="contactInfo">
+
+<a href="https://www.linkedin.com/in/nramirez0609" target="_blank" class="tip1"> <img src="imgs/linked.png" width="55" height="55" alt="linkedin"/> <span class="linkedtip">Check out my LinkedIn Profile</span></a> <br>
+
+<a href="mailto:nancy.ramirez86@gmail.com?subject=I%20found%20your%20Interactive%20Resume%20Online." class="tip2"><img src="imgs/email.png" width="55" height="55" alt="email" />
+ <span class="emailtip">E-mail me at nancy.ramirez86@gmail.com</span></a> <br>
+ 
+<a href="" onmousedown="alert('Mobile Number: 317.490.9439')" class="tip3"><img src="imgs/mobile.png" width="55" height="55" alt="mobile" />
+ <span class="mobiletip">Mobile number (317)490-9439</span></a> <br>
+ 
+<a href="imgs/resume.pdf" target="_blank" class="tip4"><img src="imgs/resume.png" width="55" height="55" alt="resume"/>
+ <span class="resumetip">Print my Resume</span></a>
+ 
+ <a href="imgs/ReferenceList.pdf" target="_blank" class="tip5"><img src="imgs/reference.png" width="55" height="55" alt="reference"/>
+ <span class="resumetip">Reference List</span></a>
+
+  <a href="recommendations.html" target="_blank" class="tip6"><img src="imgs/recommendation.png" width="55" height="55" alt="recommendation"/>
+ <span class="resumetip">Recommendation Letters</span></a>
+ 
+</div>
+
+<div id="fullpage">	
+	
+		<div class="section" id="section0"> 
+	
+		<div id="object" class="bigEntrance">
+		&lt;Welcome&gt;
+		</div>
+		
+		<div class="intro" >
+			<p>
+			
+				<span class="ribbon1" id="tab1">{</span><br>
+				<span id="tab2">Scroll down to see <span class="ribbon3">Nancy</span>'s Resume</span>
+				<br>
+				<span class="ribbon1" id="tab3">
+				}
+				</span>
+			</p>
+		</div>
+		<br><br>
+	</div>
+	
+	
+	<div class="section" id="section1" >	
+			<div class="intro" id="about">	
+			<h2 class="about"> <img src="imgs/about.png" width="50" height="50" alt="about">  Objective</h2> 
+			</div>
+			<p class="paragraph">
+			Highly driven software development graduate with proven leadership and interpersonal skills seeking a Software Developer position to demonstrate programming and analytical abilities.
+			</p>
+	</div>
+	
+	<div class="section" id="section2" >
+		<div class="intro">
+		<br>
+		  <h2 class="education" id="edtitles1"> <img src="imgs/education.png" width="55" height="55" alt="education"> Education	</h2>
+			
+			<p class="edparagraph">AAS, Software Development &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5/2016 <br>
+				<span class="ribbon5">Ivy Tech Community College, Indianapolis IN	</span><br>	         				 
+				GPA 3.7, Cum Laude
+			</p>
+			
+			<p class="courses" id="courseList">
+			
+			• Software Development – Visual Basic <br>
+			• Systems Analysis and Design <br>
+			• Mobile Application Development <br>
+			• Web Site Development <br>
+			• Client-Side Scripting Language <br>
+			• Project Management
+
+
+			</p>
+			
+			
+		  <h2 class="education" id="edtitles2"> <img src="imgs/cert.png" width="50" height="50" alt="cert"> Certificates	</h2>
+		  
+			<p class="edparagraph">
+			
+			•<a href="imgs/PcPro.pdf" target="_blank" class="certTip1">TestOut PC Pro certified &nbsp;
+			<span class="certImg1"><img src="imgs/pcCert.png" width="380" height="292" alt="Pc Pro Certificate"></span>
+			</a><br>
+			
+			•<a href="imgs/NetworkPro.pdf" target="_blank"  class="certTip2">TestOut Network Pro certified &nbsp;
+			<span class="certImg2"><img src="imgs/netCert.png" width="380" height="292" alt="Pc Pro Certificate"></span>
+			</a> <br>
+			• Ivy Tech Technical Certificate in Software Development
+			</p>
+		</div>
+		
+		<audio id="mySoundClip">  <source src="imgs/grad.mp3" type="audio/mpeg"> </audio>
+			<br><br>
+			
+	</div>
+	
+	<div class="section" id="section3" >
+	
+		<div class="intro">
+			<h2 class="skills">  <img src="imgs/skills.png" width="50" height="50" alt="skills" /> Languages	</h2>
+			
+			<table class="skillsparagraph">
+				<thead>
+					<tr>
+						<th id="firstcell"></th>
+						<th>HTML</th>
+						<th>CSS</th>
+						<th>JAVA-<br>SCRIPT</th>
+						<th>JQUERY</th>
+						<th>JAVA</th>
+						<th>VB.NET</th>
+						<th>SQL</th>
+						<th>&nbsp; C# &nbsp;</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>EXPERT</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					
+					<tr>
+					<td>PROFICIENT</td>
+					<td rowspan="4" id="htmlbar"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					
+					<tr>
+					<td>FAMILIAR</td>
+					<td rowspan="3" id="cssbar"></td>
+					<td rowspan="3" id="jsbar"></td>
+					<td></td>
+					<td rowspan="3" id="jbar"></td>
+					<td rowspan="3" id="vbbar"></td>
+					<td></td>
+					<td rowspan="3" id="cbar"></td>
+					</tr>
+					
+					<tr>
+					<td>BEGINNER</td>
+					<td></td>
+					<td rowspan="2" id="sqlbar"></td>
+					</tr>
+					
+					<tr>
+					<td></td>
+					<td id="jqbar"></td>
+					
+					</tr>
+				</tbody>
+			</table>
+			
+			
+		</div> <!-- class="intro" -->
+
+	</div> <!-- class="section" id="section3" -->
+	
+	<div class="section" id="section4">
+
+			<div class="intro">				 
+			<h2 class="job1"><img src="imgs/job2.png" width="50" height="50" alt="tie3"/> Job History</h2> <br>
+			<p class="job1paragraph">	<span class="ribbonBold">Photographer </span> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; March/2010-November/2012 <br>
+			<span class="ribbon5">Lifetouch National School Studios, Indianapolis, IN</span>
+			</p>
+			<ul class="list">
+					<li>Take students and staff pictures.</li>
+					<li>Set up and tear down equipment in a timely and efficient manner. </li>
+					<li>Maintain and organize student payments while photographing.</li>
+					<li> Utilize companies program to save digital images.</li>
+					<li>Awarded photographer of the Year in 2011.</li>
+					
+			</ul> 
+			
+			</div>	
+			<br>
+			<div class="intro">				 
+			
+			<p class="job1paragraph">	<span class="ribbonBold">Guest Services Supervisor </span> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; April/2007-October/2009 <br>
+			<span class="ribbon5">Hilton Indianapolis Hotel & Suites, Indianapolis, IN</span>
+			</p>
+			
+			<ul class="list">
+					<li>Promoted to Lead Agent in 2007.</li>
+					<li>Promoted to Supervisor in 2008. </li>
+					<li>Supervised employees. </li>
+					<li>Hired and trained personnel.</li>
+					<li>Manage Gift Shop and its inventory.</li>
+			</ul> 
+			</div>	
+
+	</div>
+	
+		<div class="section" id="section5" >
+			<div class="intro">
+				<h2 class="job1" id="olg"><img src="imgs/volunteer.png" width="50" height="50" alt="tie1"/> Vonlunteer Experience </h2>
+				<p id="translator"><span class="ribbonBold">Translator Resource</span>	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;October/2014-present<br>
+					<span class="ribbon5">Our Lady of Greenwood School, Greenwood, IN</span><br><br>
+				</p>
+				
+				<p class="list" id="translatorlist">
+					•	Assist parents and students with English as second language. <br>
+- Currently attend events such as Open House to assist potential families that plan to join.  Attend parent-teacher conferences to discuss students’ progress, concerns, and ways to continue to improve. Previously, helped students with homework to improve vocabulary and better reading comprehension.  
+
+				</p>
+			</div>
+	</div>
+	
+</div>
+
+<script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('.slideUp').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+
+
+
+
+
+</body>
+</html>

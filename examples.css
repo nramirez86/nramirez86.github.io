@@ -1,0 +1,655 @@
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+body {
+	background-color: #151117;
+}
+#section0,
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+	#section5{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+a{
+	text-decoration:none;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+
+ol,ul {
+    /*list-style-image:url("imgs/job.png");*/
+	
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 30px;
+    margin:0;
+    padding:0;
+    color:rgb(38, 49, 62);
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/**from html ***/
+
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	#section0{
+		background-image: url(imgs/blurChi.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+		
+	#section1 p {
+		text-align:left;
+		display:none;
+	}
+	#section1 .intro p, #section2 .intro p, #section2 .intro p a,  #section4 .intro p, #section4 .intro .list, #section5 .intro {
+		color: white;
+	}
+	#section1 .intro .about{ /*the tile about*/
+		margin-left: 19%; 
+		text-align:left;
+		font-size:60px;
+	}
+	#section2 .intro .edparagraph{
+		text-align:left;
+		left: -130%;
+		position:relative;
+	}
+	#section2 .intro .education{
+		text-align:left;
+		margin-left: 19%; 
+		font-size:60px;
+	}
+	#section3 .intro .skillsparagraph{
+		text-align:left;
+	
+	}
+	#section3 .intro .skills{
+		text-align:left;
+		margin-left: 19%; 
+		font-size:60px;
+	}
+	#section4 .job1 {
+		margin-left: 19%; 
+		text-align:left;
+		font-size:60px;
+	}
+	#section4 .job1paragraph {
+		text-align:left;
+	}
+	#section4 .intro .list{
+		margin-left: 25%;
+		font-size:20px;
+	}
+	#section4 li {
+		text-align:left;
+		
+	}
+	#section5 .job1 {
+		margin-left: 19%; 
+		text-align:left;
+		font-size:60px;
+	}
+	#section5 #translator {
+		text-align:left;
+	}
+	#section5 .intro .list{
+		text-align:left;
+		margin-left: 25%;
+		font-size:20px;
+	}
+
+
+	
+#firstcell {
+	border-bottom: none;
+}
+#about, #edtitles1, #edtitles2, #olg {
+	visibility: hidden;
+}
+#object{
+	visibility: hidden;
+	color:rgb(223, 101, 101);
+	font-size:110px;
+	text-align:center;
+}
+#htmlbar{
+	visibility:hidden;
+	background-color: #f8b195;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#cssbar{
+	visibility:hidden;
+	background-color: #f66863;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#jsbar{
+	visibility:hidden;
+	background-color: #be7275;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#jqbar{
+	visibility:hidden;
+	background-color:#c06c84;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}	
+#jbar{
+	visibility:hidden;
+	background-color: #6c587b;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#vbbar{
+	visibility:hidden;
+	background-color:#805373;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#sqlbar{
+	visibility:hidden;
+	background-color:#090922;
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#cbar{
+	visibility:hidden;
+	background-color:rgb(56, 1, 65);
+	border-right: 5px solid #151117;
+	border-left: 5px solid #151117;
+}
+#courseList{
+	visibility:hidden;
+}
+	div.contactInfo{
+		display:block;
+		position:fixed;
+		left:0;
+		top: 20%;
+		width: 2%;
+		z-index:9;
+		text-align:center;
+	}
+				
+	#section1 img{
+	left: 130%;
+	position:relative;
+	}
+	#section0 p{
+		font-size:20px;
+		text-align:left;
+	}
+
+	#tab2 { 
+		margin-left: 23%; 
+		text-align:left;
+	}
+	#tab1 { 
+		margin-left: 23%; 
+		text-align:left;
+	}
+	#tab3 { 
+		margin-left: 23%; 
+		text-align:left;
+	}
+	/*	.ribbon1::before {
+			content:"";
+			color: rgb(0, 146, 180);
+		}
+		.ribbon1::after{
+			content:"";
+			color: rgb(0, 146, 180);
+		}*/
+		.ribbon1 {
+			color:rgb(0, 146, 180);
+		}
+		.ribbon3 { /*intro color red*/
+			color:rgb(223, 101, 101);
+		}
+		.ribbon5 { /*Italizes Ivy tech community college in education div*/
+			font-style: italic;
+		}
+		.ribbonBold {
+			font-weight:bold;
+		}
+		
+/***end */
+
+/*1st cert pop up*/
+.certTip1 {
+	color:white;
+}
+a.certTip1 span {
+    z-index:10;
+	display:none; 
+}
+a.certTip1:hover span{
+    display:inline; 
+	position:absolute; 
+}
+.certImg1 {
+	z-index:20;
+	position:absolute;
+	margin-top: -29%;
+	}
+.certTip1 .certImg1::after {
+    content: " ";
+    position: absolute;
+    top: 72%; /*from the top of the image down*/
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+} 
+/*2nd cert pop up*/
+.certTip2 {
+	color:white;
+}
+a.certTip2 span {
+    z-index:10;
+	display:none; 
+}
+a.certTip2:hover span{
+    display:inline; 
+	position:absolute; 
+}
+.certImg2 {
+	z-index:20;
+	position:absolute;
+	margin-top:-31%;
+}
+.certTip2 .certImg2::after {
+    content: " ";
+    position: absolute;
+    top: 83%; /*from the top of the image down*/
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+} 
+
+/*footer image tips*/
+.tip1 .linkedtip {
+    visibility: hidden;
+    width: 120px;
+    background-color:rgb(69, 111, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+	top: -1px;
+    left: 200%;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tip1:hover .linkedtip {
+	display:inline; 
+	position:absolute; 
+    visibility: visible;
+    opacity: 1;
+}
+.tip2 .emailtip {
+    visibility: hidden;
+    width: 210px;
+    background-color:rgb(69, 111, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+	top: 60px;
+    left: 200%;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tip2:hover .emailtip {
+	display:inline; 
+	position:absolute; 
+    visibility: visible;
+    opacity: 1;
+}
+.tip3 .mobiletip {
+    visibility: hidden;
+    width: 120px;
+    background-color:rgb(69, 111, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+	top: 120px;
+    left: 200%;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tip3:hover .mobiletip {
+	display:inline; 
+	position:absolute; 
+    visibility: visible;
+    opacity: 1;
+}
+.tip4 .resumetip {
+    visibility: hidden;
+    width: 120px;
+    background-color:rgb(69, 111, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+	top: 180px;
+    left: 200%;
+	
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tip4:hover .resumetip {
+	display:inline; 
+	position:absolute; 
+    visibility: visible;
+    opacity: 1;
+}
+.tip5 .resumetip {
+    visibility: hidden;
+    width: 120px;
+    background-color:rgb(69, 111, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+	top: 240px;
+    left: 200%;
+	
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tip5:hover .resumetip {
+	display:inline; 
+	position:absolute; 
+    visibility: visible;
+    opacity: 1;
+}
+
+.tip6 .resumetip {
+    visibility: hidden;
+    width: 130px;
+    background-color:rgb(69, 111, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+	top: 300px;
+    left: 200%;
+	
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tip6:hover .resumetip {
+	display:inline; 
+	position:absolute; 
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*end of image tip*/
+
+.courses {
+	text-align: left;
+	margin-left: 30%;
+	font-size: 15px;
+}
+
+/*table in skills section*/
+table {
+	color:white;
+	border-spacing: 0;
+	padding-left: 17%;
+	/*	color: rgb(38, 49, 62); color dark gray*/
+}
+ th {
+	 padding: 1em 0.8em 0 2em;
+	 border-bottom: 10px solid rgb(38, 49, 62);
+ }
+ td {
+	 padding: 2.5em 1em 0 1em;
+	 border-bottom:2px solid white;
+ }
+
+
+/*end of table in skills section*/
+
+
+/***/
+		#section0 p{
+			display:none; /*assing to none so text can be invisible at first and then fade in*/
+		}
+		#section0 img{
+			left: 130%;
+			position:relative;
+		}
+
+		#section1 img, #section2 img{
+		left: 0%;
+		}
+	
+		/*#section1 .intro{
+			left: -130%;
+			position:relative;
+		}*/
+
+		/*#section2 .intro{
+			left: -130%;
+			position:relative;
+		}*/
+		
+		/*#section3 .intro{ /use this code when intro slides from left
+			left: -130%;
+			position:relative;
+		}*/ 
+		/*#section4 .intro{
+			left: -130%;
+			position:relative;
+		}*/
+#translator , #translatorlist {
+	visibility: hidden;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+
+p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+	color: #fff;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+

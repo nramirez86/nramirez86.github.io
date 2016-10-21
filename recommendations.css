@@ -1,0 +1,46 @@
+/*Nancy
+reference css*/
+
+body {
+	background-color: #151117;
+	font-family: arial,helvetica;
+}
+h5 {
+	text-align: center;
+	margin-top: 5%;
+	font-size:25px;
+	color:white;
+}
+#carver {
+	color:rgb(223, 101, 101);
+	margin-left:27%;
+	margin-top:-4.5%;
+	font-size:15px;
+}
+.ribbonCarver {
+	font-weight:bold;
+	font-size:17px;
+	}
+#ivy {
+	margin-left:20%;
+	margin-top:2%;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(0, 146, 180);
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
